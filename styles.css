@@ -1,0 +1,258 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: #222;
+  background: #f0f8ff;
+}
+
+a { color: inherit; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container {
+  width: min(1000px, 92%);
+  margin: 0 auto;
+}
+
+.site-header {
+  border-bottom: 1px solid #eee;
+  background: #fff;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+}
+
+.brand {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.brand .dot {
+  color: #ff6600;
+}
+
+.site-nav a {
+  margin-left: 18px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: #002868;
+}
+
+.hero {
+  background-image: linear-gradient(rgba(0,40,104,0.85), rgba(0,40,104,0.85)),
+                    url("https://images.unsplash.com/photo-1496442226666-8d4d0e2dfb42?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 48px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  color: #fff;
+}
+
+.hero-subhead {
+  margin: 6px 0 22px;
+  font-size: 22px;
+  color: #ff6600;
+  font-weight: 400;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 3px;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  opacity: 0.95;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.btn-dark {
+  background: #ff6600;
+  color: #fff;
+  border: none;
+}
+
+.btn-dark:hover {
+  background: #e65500;
+}
+
+.btn-outline {
+  border: 2px solid #fff;
+  color: #fff;
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background: #ff6600;
+  border-color: #ff6600;
+  color: #fff;
+}
+
+.features {
+  padding: 42px 0;
+}
+
+.features-grid {
+  display: flex;
+  gap: 26px;
+  flex-wrap: wrap;
+}
+
+.feature {
+  flex: 1;
+  min-width: 240px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.section-title {
+  text-align: center;
+  margin: 0 0 24px;
+  font-size: 18px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #002868;
+}
+
+.secondary {
+  padding: 34px 0 44px;
+}
+
+.secondary-grid {
+  display: flex;
+  gap: 26px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  min-width: 320px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transform: translateY(-4px);
+}
+
+.card-text {
+  padding: 18px;
+}
+
+.card-text h3 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #002868;
+}
+
+.card-text p {
+  margin: 0 0 14px;
+  color: #666;
+  font-size: 13px;
+}
+
+.card-image {
+  min-height: 180px;
+  background-size: cover;
+  background-position: center;
+}
+
+.cta {
+  background: #002868;
+  padding: 60px 0;
+  color: #fff;
+}
+
+.cta-inner {
+  text-align: center;
+}
+
+.site-footer {
+  background: #fafafa;
+  border-top: 1px solid #eee;
+  padding: 24px 0;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  max-width: 360px;
+  color: #666;
+  font-size: 12px;
+}
+
+.footer-cols {
+  display: flex;
+  gap: 28px;
+}
+
+.footer-col h4 {
+  margin: 0 0 8px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #002868;
+}
+
+.footer-col a {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  margin: 6px 0;
+}
+
+.img-times-square {
+  background-image: url("images/timessquare.jpg");
+}
+
+.img-statue {
+  background-image: url("images/statueofliberty.jpg");
+}
+
+.img-bridge {
+  background-image: url("images/brooklynbridge.jpg");
+}
+
+.img-central {
+  background-image: url("images/centralpark.jpg");
+}
