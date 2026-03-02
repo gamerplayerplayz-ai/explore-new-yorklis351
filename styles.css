@@ -46,13 +46,10 @@ a:hover { text-decoration: underline; }
 }
 
 .hero {
-  background-image: linear-gradient(rgba(0,40,104,0.85), rgba(0,40,104,0.85)),
-                    url("https://images.unsplash.com/photo-1496442226666-8d4d0e2dfb42?auto=format&fit=crop&w=1600&q=80");
+  background-image: url("https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=60");
   background-size: cover;
   background-position: center;
   min-height: 500px;
-  display: flex;
-  align-items: center;
 }
 
 .hero-content {
@@ -72,7 +69,7 @@ a:hover { text-decoration: underline; }
 .hero-subhead {
   margin: 6px 0 22px;
   font-size: 22px;
-  color: #ff6600;
+  color: #fff;
   font-weight: 400;
 }
 
@@ -97,7 +94,9 @@ a:hover { text-decoration: underline; }
 }
 
 .btn-dark:hover {
-  background: #e65500;
+  background-color: #e65c00;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .btn-outline {
@@ -107,9 +106,15 @@ a:hover { text-decoration: underline; }
 }
 
 .btn-outline:hover {
-  background: #ff6600;
-  border-color: #ff6600;
-  color: #fff;
+  background-color: #ffffff;
+  color: #002244;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.site-nav a:hover {
+  color: #ff6600;
+  text-decoration: underline;
 }
 
 .features {
@@ -255,4 +260,8 @@ a:hover { text-decoration: underline; }
 
 .img-central {
   background-image: url("images/centralpark.jpg");
+}
+
+.img-trails {
+  background-image: url("images/centralparktrail.jpg");
 }
